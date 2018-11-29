@@ -142,7 +142,7 @@ function Reset() {
   }
 
 // var choice 1 and choice 2
-var carte1, carte2;
+var carte1, carte2 = -1;
 
 //  Mechanics of the game :
 for (let e = 0; e < tbl_card.length; e++) {
@@ -159,7 +159,7 @@ for (let e = 0; e < tbl_card.length; e++) {
                 if (nbclick === 1) {
                     if(document.getElementById('r_card' + e).style.visibility=='hidden') {
                     carte1 = e;
-                    carte2 = "";
+                    carte2 = -1;
 
 
 
@@ -173,7 +173,7 @@ for (let e = 0; e < tbl_card.length; e++) {
                     }
                 }
 
-                if (nbclick === 2) {
+                if (nbclick == 2) {
                     if(document.getElementById('r_card' + e).style.visibility=='hidden') {
                     carte2 = e;
 
@@ -187,6 +187,7 @@ for (let e = 0; e < tbl_card.length; e++) {
 
                         document.getElementById('pictures_n' + carte2).style.visibility = 'hidden';
                         document.getElementById('r_card' + carte2).style.visibility = 'visible';
+
                     }
                 }
 
@@ -232,11 +233,13 @@ for (let e = 0; e < tbl_card.length; e++) {
 
                         setTimeout(function () {
 
-                            document.getElementById('pictures_n' + carte1).style.visibility = 'visible';
-                            document.getElementById('r_card' + carte1).style.visibility = 'hidden';
+                                    document.getElementById('pictures_n' + carte1).style.visibility = 'visible';
+                                    document.getElementById('r_card' + carte1).style.visibility = 'hidden';
 
-                                document.getElementById('pictures_n' + carte2).style.visibility = 'visible';
-                                document.getElementById('r_card' + carte2).style.visibility = 'hidden';
+                                    if(carte2 > -1) {
+                                        document.getElementById('pictures_n' + carte2).style.visibility = 'visible';
+                                        document.getElementById('r_card' + carte2).style.visibility = 'hidden';
+                                    }
 
 
                             nbclick = 0;
