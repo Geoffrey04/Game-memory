@@ -235,10 +235,9 @@ for (let e = 0; e < tbl_card.length; e++) {
                             document.getElementById('pictures_n' + carte1).style.visibility = 'visible';
                             document.getElementById('r_card' + carte1).style.visibility = 'hidden';
 
-                            if(carte2) {
                                 document.getElementById('pictures_n' + carte2).style.visibility = 'visible';
                                 document.getElementById('r_card' + carte2).style.visibility = 'hidden';
-                            }
+
 
                             nbclick = 0;
 
