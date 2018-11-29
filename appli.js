@@ -1,21 +1,19 @@
 // array of <img> elements:
 var tbl_card = [
-    'Card/Card_Atom.jpg',
-    'Card/Card_Atom.jpg',
+    'Card/Card_Daenerys.jpg',
+    'Card/Card_Daenerys.jpg',
     'Card/Card_Cersei.jpg',
     'Card/Card_Cersei.jpg',
-    'Card/Card_Chrome.jpg',
-    'Card/Card_Chrome.jpg',
-    'Card/Card_css.png',
-    'Card/Card_css.png',
-    'Card/Card_html.jpg',
-    'Card/Card_html.jpg',
+    'Card/Card_starke.gif',
+    'Card/Card_starke.gif',
+    'Card/Card_Targaryen.gif',
+    'Card/Card_Targaryen.gif',
+    'Card/Card_Tyrion.jpg',
+    'Card/Card_Tyrion.jpg',
     'Card/Card_Joffrey.jpg',
     'Card/Card_Joffrey.jpg',
-    'Card/Card_JS.png',
-    'Card/Card_JS.png',
-    'Card/Card_mozilla.jpg',
-    'Card/Card_mozilla.jpg'
+    'Card/Card_WhiteWalker.jpg',
+    'Card/Card_WhiteWalker.jpg',
 ];
 
 
@@ -213,7 +211,7 @@ for (let e = 0; e < tbl_card.length; e++) {
 
                     }
                     // Condition for pairs find , display victory screen :
-                    if(pairs === 8) {
+                    if(pairs === 7) {
 
                         document.getElementById('screen_result').style.display = 'inline-block';
 
