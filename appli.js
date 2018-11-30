@@ -17,7 +17,6 @@ var tbl_card = [
 ];
 
 
-
 // Variables :
 
 var nbclick = 0;
@@ -90,7 +89,6 @@ var min;
 var msc;
 
 
-
 // function timer :
 function score() {
 
@@ -113,31 +111,30 @@ function score() {
     if (msc < 10) {
         msc = "00" + msc
 
-    }
-    else if (msc < 100) {
+    } else if (msc < 100) {
         msc = "0" + msc
     }
 
-    document.getElementById("timer").innerHTML = min + ":" + sec ;
-    document.getElementById("timer").style.fontSize= "40px";
+    document.getElementById("timer").innerHTML = min + ":" + sec;
+    document.getElementById("timer").style.fontSize = "40px";
 
     time = setTimeout("score()", 10);
 
-    };
+};
 
 // function timer2 :
 function newscore() {
 
     start = new Date();
     score();
-  }
+}
 
 newscore();
 
 // function for button reset :
 function Reset() {
     location.reload();
-  }
+}
 
 // var choice 1 and choice 2
 var carte1, carte2 = -1;
@@ -155,10 +152,9 @@ for (let e = 0; e < tbl_card.length; e++) {
 
 
                 if (nbclick === 1) {
-                    if(document.getElementById('r_card' + e).style.visibility=='hidden') {
-                    carte1 = e;
-                    carte2 = -1;
-
+                    if (document.getElementById('r_card' + e).style.visibility == 'hidden') {
+                        carte1 = e;
+                        carte2 = -1;
 
 
                         tbl_selec.push(carte1);
@@ -172,9 +168,8 @@ for (let e = 0; e < tbl_card.length; e++) {
                 }
 
                 if (nbclick == 2) {
-                    if(document.getElementById('r_card' + e).style.visibility=='hidden') {
-                    carte2 = e;
-
+                    if (document.getElementById('r_card' + e).style.visibility == 'hidden') {
+                        carte2 = e;
 
 
                         tbl_selec.push(carte2);
@@ -199,8 +194,8 @@ for (let e = 0; e < tbl_card.length; e++) {
                         document.getElementById('r_card' + carte1).style.visibility = 'visible';
 
 
-                            document.getElementById('pictures_n' + carte2).style.visibility = 'hidden';
-                            document.getElementById('r_card' + carte2).style.visibility = 'visible';
+                        document.getElementById('pictures_n' + carte2).style.visibility = 'hidden';
+                        document.getElementById('r_card' + carte2).style.visibility = 'visible';
 
 
                         nbclick = 0;
@@ -208,16 +203,15 @@ for (let e = 0; e < tbl_card.length; e++) {
                         console.log(pairs);
 
 
-
                     }
                     // Condition for pairs find , display victory screen :
-                    if(pairs === 7) {
+                    if (pairs === 7) {
 
                         document.getElementById('screen_result').style.display = 'inline-block';
 
-                        document.getElementById('text_win').innerHTML = 'vous avez trouvez :' + ' ' + pairs + ' ' + 'paire(s)' +  '<br>' + 'en' + '' + ':' + min + 'min' + ' ' + 'et' + ' ' + sec + 'sec'  ;
-                        document.getElementById('screen').style.display='none';
-                        document.getElementById('resetbutton').style.display='inline-block';
+                        document.getElementById('text_win').innerHTML = 'vous avez trouvez :' + ' ' + pairs + ' ' + 'paire(s)' + '<br>' + 'en' + '' + ':' + min + 'min' + ' ' + 'et' + ' ' + sec + 'sec';
+                        document.getElementById('screen').style.display = 'none';
+                        document.getElementById('resetbutton').style.display = 'inline-block';
                         document.getElementById('timer').style.display = 'none';
 
 
@@ -228,16 +222,15 @@ for (let e = 0; e < tbl_card.length; e++) {
                     if (tbl_card[carte1] != tbl_card[carte2]) {
 
 
-
                         setTimeout(function () {
 
-                                    document.getElementById('pictures_n' + carte1).style.visibility = 'visible';
-                                    document.getElementById('r_card' + carte1).style.visibility = 'hidden';
+                            document.getElementById('pictures_n' + carte1).style.visibility = 'visible';
+                            document.getElementById('r_card' + carte1).style.visibility = 'hidden';
 
-                                    if(carte2 > -1) {
-                                        document.getElementById('pictures_n' + carte2).style.visibility = 'visible';
-                                        document.getElementById('r_card' + carte2).style.visibility = 'hidden';
-                                    }
+                            if (carte2 > -1) {
+                                document.getElementById('pictures_n' + carte2).style.visibility = 'visible';
+                                document.getElementById('r_card' + carte2).style.visibility = 'hidden';
+                            }
 
 
                             nbclick = 0;
@@ -251,5 +244,6 @@ for (let e = 0; e < tbl_card.length; e++) {
             }
         }
     )
-};
+}
+;
 
