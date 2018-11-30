@@ -1,19 +1,19 @@
 // array of <img> elements:
 var tbl_card = [
-    'Card/Card_Daenerys.jpg',
-    'Card/Card_Daenerys.jpg',
-    'Card/Card_Cersei.jpg',
-    'Card/Card_Cersei.jpg',
-    'Card/Card_starke.gif',
-    'Card/Card_starke.gif',
-    'Card/Card_Targaryen.gif',
-    'Card/Card_Targaryen.gif',
-    'Card/Card_Tyrion.jpg',
-    'Card/Card_Tyrion.jpg',
-    'Card/Card_Joffrey.jpg',
-    'Card/Card_Joffrey.jpg',
-    'Card/Card_WhiteWalker.jpg',
-    'Card/Card_WhiteWalker.jpg',
+    'Card/Card_Gon-k.png',
+    'Card/Card_Gon-k.png',
+    'Card/Card_Gon.gif',
+    'Card/Card_Gon.gif',
+    'Card/Card_Hisoka.png',
+    'Card/Card_Hisoka.png',
+    'Card/Card_Kirua.gif',
+    'Card/Card_Kirua.gif',
+    'Card/Card_Netero.png',
+    'Card/Card_Netero.png',
+    'Card/Card_Meruem.png',
+    'Card/Card_Meruem.png',
+    'Card/Card_Kurapika.png',
+    'Card/Card_Kurapika.png',
 ];
 
 
