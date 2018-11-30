@@ -37,7 +37,7 @@ h1 {
 
     width: 23vh;
     height: 30vh;
-    border : 2px solid black;
+    border : 4px outset darkblue;
     margin : 2vh;
     background-image: url("Card_none.jpg");
     background-repeat: no-repeat;
